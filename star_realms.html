@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star & Hero Realms Contador</title>
+  <style>
+    :root {
+      --primary-color: #E0B200;
+      --primary-light: #f2c722;
+      --primary-dark: #c9a400;
+      --accent-color: #E0B200;
+      --text-light: #FFFFFF;
+      --text-dark: #212121;
+      --text-secondary: #757575;
+      --divider-color: #BDBDBD;
+      --background-color: #F5F5F5;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/images/star_realms_icon.png" alt="Logo Contador Star Realms" style="border-radius: 50%;">
+          <h1>Contador de Puntos - Star & Hero Realms</h1>
+        </div>
+        <button class="mobile-menu-btn">☰</button>
+        <nav class="nav-links">
+          <a href="#features">Características</a>
+          <a href="#download">Descargar</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>¡Haz tus partidas más fáciles y divertidas!</h2>
+      <p>
+        Este contador de puntos, vidas y autoridad te permite llevar el control en juegos de cartas y mesa como Star Realms, Hero Realms, Magic: The Gathering, Cthulhu Realms, Ascension, y muchos más.
+      </p>
+      <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" target="_blank" rel="noopener noreferrer">
+        <img src="assets/images/google-play-badge.svg" alt="Disponible en Google Play" class="google-play-badge">
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎮</div>
+          <h3>Compatible con múltiples juegos</h3>
+          <p>Ideal para Star Realms, Hero Realms, Magic y cualquier juego que requiera seguimiento de puntos o vidas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Interfaz intuitiva</h3>
+          <p>Fácil de usar y diseñada para que cada jugador pueda llevar su cuenta sin complicaciones.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Hasta 4 jugadores</h3>
+          <p>Lleva el control de todos los jugadores en una misma partida.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Acceso offline</h3>
+          <p>Usa la app en cualquier lugar, sin necesidad de conexión a internet.</p>
+        </div>
+        <div class="section-title">
+          <h2>Características principales</h2>
+        <p>Diseñado por un fan, para los fans. App no oficial.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="app-badges">
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/google-play-badge.svg" alt="Disponible en Google Play" class="google-play-badge">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Star & Hero Realms Contador</h3>
+          <p>Tu aliado en las partidas de cartas más épicas. Diseñada para fans por fans.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Soporte</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="https://doc-hosting.flycricket.io/contador-starrealms-privacy-policy/xxxxxxxx/privacy" target="_blank" rel="noopener noreferrer">
+                Política de Privacidad
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 JDCC Mobile. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
