@@ -15,6 +15,8 @@ This project is a personal portfolio website showcasing mobile applications publ
     - `index.html`: Main landing page with a grid of apps.
     - `[app_name].html`: Individual landing pages for each app.
     - `assets/`: Directory for static assets (images).
+        - `assets/images/app_store_badge.svg`: Official "Download on the App Store" badge.
+        - `assets/images/google_play_badge.svg`: Official "Get it on Google Play" badge.
 - **Styling**: CSS is currently embedded within the `<head>` of each HTML file.
 - **Scripting**: Minimal vanilla JS embedded at the bottom of HTML files (for mobile menus/navigation).
 
