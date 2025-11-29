@@ -6,27 +6,21 @@ This project is a personal portfolio website showcasing mobile applications publ
 ## Goals
 - Showcase a portfolio of apps.
 - Provide details for each app (features, download links).
-- **CRITICAL**: Ensure every app page has clear access to **Support** and a **Privacy Policy**.
+- **CRITICAL**: Ensure the site has clear access to **Support** and **Privacy Policy** information (if applicable).
 
 ## Architecture & Technology
 - **Hosting**: GitHub Pages.
 - **Stack**: Pure HTML, CSS, and vanilla JavaScript.
 - **Structure**:
-    - `index.html`: Main landing page with a grid of apps.
-    - `[app_name].html`: Individual landing pages for each app.
+    - `index.html`: Main landing page with a list of apps ("Link in Bio" style).
     - `assets/`: Directory for static assets (images).
         - `assets/images/app_store_badge.svg`: Official "Download on the App Store" badge.
         - `assets/images/google_play_badge.svg`: Official "Get it on Google Play" badge.
-- **Styling**: CSS is currently embedded within the `<head>` of each HTML file.
-- **Scripting**: Minimal vanilla JS embedded at the bottom of HTML files (for mobile menus/navigation).
+- **Styling**: CSS is currently embedded within the `<head>` of HTML files.
+- **Scripting**: Minimal vanilla JS embedded at the bottom of HTML files.
 
 ## File Structure
 - `index.html`: Entry point.
-- `star_realms.html`: Detail page for Star & Hero Realms Contador.
-- `chinchon_counter.html`: Detail page for Chinchón Counter.
-- `cosmere_companion.html`: Detail page for Cosmere Companion.
-- `descubre_cantabria.html`: Detail page for Descubre Cantabria.
-- `kawaii_sushi_counter.html`: Detail page for Kawaii Sushi Counter.
 - `assets/`: Images and icons.
 
 ## Guidelines for Agents
@@ -39,16 +33,12 @@ This project is a personal portfolio website showcasing mobile applications publ
     - Ensure responsive design (mobile-first or adaptive).
 
 3. **Content Requirements**:
-    - **Support & Privacy**: Every app page MUST have a footer or dedicated section with links to:
-        - Privacy Policy (external link).
-        - Support (email or contact method).
+    - **Support**: The site MUST have a footer or dedicated section with contact information (email).
 
 4. **Maintenance**:
     - When adding a new app:
-        1. Create a new HTML file based on the existing template.
-        2. Add a card to `index.html`.
-        3. Ensure assets are placed in `assets/images/`.
+        1. Add a card to `index.html`.
+        2. Ensure assets are placed in `assets/images/`.
 
 ## Current Status & Known Issues
-- `descubre_cantabria.html`: The privacy policy link points to a Flycricket login page, which is likely incorrect. It should be updated to the public view link.
-- Support sections currently exist but mainly contain the Privacy Policy link. A direct contact method (e.g., email) is not explicitly visible on all pages.
+- None.
