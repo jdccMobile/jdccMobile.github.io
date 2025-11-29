@@ -5,6 +5,21 @@
   right: 20px;
   z-index: 1000;
   font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.header-link:hover {
+  color: #3E8E4D;
 }
 
 .lang-btn {
