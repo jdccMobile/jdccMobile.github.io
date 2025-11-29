@@ -26,6 +26,7 @@ This project is a personal portfolio website showcasing mobile applications publ
 - `chinchon_counter.html`: Detail page for Chinchón Counter.
 - `cosmere_companion.html`: Detail page for Cosmere Companion.
 - `descubre_cantabria.html`: Detail page for Descubre Cantabria.
+- `kawaii_sushi_counter.html`: Detail page for Kawaii Sushi Counter.
 - `assets/`: Images and icons.
 
 ## Guidelines for Agents
