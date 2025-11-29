@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JDMobile - Indie Developer</title>
+  <title data-i18n="page_title">JDMobile - Indie Developer</title>
   <link rel="icon" href="assets/images/web_icon.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="assets/css/i18n.css"/>
   <style>
     :root {
       --primary-color: #3E8E4D;
@@ -199,22 +201,44 @@
 
 <body>
 
+  <!-- Language Selector -->
+  <div id="language-selector">
+    <button class="lang-btn" aria-label="Select Language"></button>
+    <div class="lang-dropdown">
+      <div class="lang-option" data-lang="es">
+        <span class="fi fi-es"></span> Español
+      </div>
+      <div class="lang-option" data-lang="en">
+        <span class="fi fi-gb"></span> English
+      </div>
+      <div class="lang-option" data-lang="fr">
+        <span class="fi fi-fr"></span> Français
+      </div>
+      <div class="lang-option" data-lang="de">
+        <span class="fi fi-de"></span> Deutsch
+      </div>
+      <div class="lang-option" data-lang="it">
+        <span class="fi fi-it"></span> Italiano
+      </div>
+    </div>
+  </div>
+
   <header>
     <h1>JDMobile</h1>
-    <p class="subtitle">Indie Developer</p>
+    <p class="subtitle" data-i18n="subtitle">Indie Developer</p>
   </header>
 
   <div class="container">
 
     <!-- Apps Section -->
-    <div class="section-title">APPS</div>
+    <div class="section-title" data-i18n="apps_title">APPS</div>
 
     <!-- Kawaii Sushi Counter -->
     <div class="app-card">
       <div class="app-header">
         <img src="assets/images/kawaii_sushi_icon.png" alt="Icono Kawaii Sushi" class="app-icon" />
-        <h2 class="app-title">Kawaii Sushi Counter: Kawashi</h2>
-        <p class="app-desc">El contador de sushi más kawaii: cuenta los sushis que comes y supera tu récord</p>
+        <h2 class="app-title" data-i18n="kawaii_title">Kawaii Sushi Counter: Kawashi</h2>
+        <p class="app-desc" data-i18n="kawaii_desc">El contador de sushi más kawaii: cuenta los sushis que comes y supera tu récord</p>
       </div>
       <div class="btn-container">
         <a href="https://apps.apple.com/ca/app/kawaii-sushi-counter-kawashi/id6754204916" class="store-link" target="_blank">
@@ -230,8 +254,8 @@
     <div class="app-card">
       <div class="app-header">
         <img src="assets/images/star_realms_icon.png" alt="Icono Star Realms" class="app-icon" />
-        <h2 class="app-title">Star & Hero Realms Contador</h2>
-        <p class="app-desc">Contador de puntos, vida y autoridad para Star Realms y Hero Realms.</p>
+        <h2 class="app-title" data-i18n="star_title">Star & Hero Realms Contador</h2>
+        <p class="app-desc" data-i18n="star_desc">Contador de puntos, vida y autoridad para Star Realms y Hero Realms.</p>
       </div>
       <div class="btn-container">
         <!-- Google Play Button -->
@@ -245,8 +269,8 @@
     <div class="app-card">
       <div class="app-header">
         <img src="assets/images/chinchon_icon.png" alt="Icono Chinchón" class="app-icon" />
-        <h2 class="app-title">Chinchón contador de puntos</h2>
-        <p class="app-desc">Anota puntos de Chinchón, Conga o Golpe sin conexión.</p>
+        <h2 class="app-title" data-i18n="chinchon_title">Chinchón contador de puntos</h2>
+        <p class="app-desc" data-i18n="chinchon_desc">Anota puntos de Chinchón, Conga o Golpe sin conexión.</p>
       </div>
       <div class="btn-container">
         <a href="https://apps.apple.com/es/app/chinchon-contador/id6754444361" class="store-link" target="_blank">
@@ -262,8 +286,8 @@
     <div class="app-card">
       <div class="app-header">
         <img src="assets/images/cosmere_companion_icon.png" alt="Icono Cosmere" class="app-icon" />
-        <h2 class="app-title">Cosmere Companion</h2>
-        <p class="app-desc">Tu guía para el orden de lectura y línea temporal del Cosmere.</p>
+        <h2 class="app-title" data-i18n="cosmere_title">Cosmere Companion</h2>
+        <p class="app-desc" data-i18n="cosmere_desc">Tu guía para el orden de lectura y línea temporal del Cosmere.</p>
       </div>
       <div class="btn-container">
         <a href="https://apps.apple.com/es/app/cosmere-companion/id6754872045" class="store-link" target="_blank">
@@ -279,8 +303,8 @@
     <div class="app-card">
       <div class="app-header">
         <img src="assets/images/descubre_cantabria_icon.png" alt="Icono Cantabria" class="app-icon" />
-        <h2 class="app-title">Descubre Cantabria</h2>
-        <p class="app-desc">Descubre pueblos, monumentos y gastronomía de Cantabria.</p>
+        <h2 class="app-title" data-i18n="cantabria_title">Descubre Cantabria</h2>
+        <p class="app-desc" data-i18n="cantabria_desc">Descubre pueblos, monumentos y gastronomía de Cantabria.</p>
       </div>
       <div class="btn-container">
         <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.discovercantabria.androidApp" class="store-link" target="_blank">
@@ -290,17 +314,18 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="section-title">Contacto</div>
+    <div class="section-title" data-i18n="contact_title">Contacto</div>
     <div class="contact-card">
-      <h2 class="app-title">Email</h2>
+      <h2 class="app-title" data-i18n="email_title">Email</h2>
       <p class="app-desc"><a href="mailto:jdccmobile@gmail.com" style="color: inherit; text-decoration: none;">jdccmobile@gmail.com</a></p>
     </div>
 
   </div>
 
   <footer>
-    <p>&copy; 2025 JDMobile. Todos los derechos reservados.</p>
+    <p data-i18n="footer_text">&copy; 2025 JDMobile. Todos los derechos reservados.</p>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
 </body>
 </html>
