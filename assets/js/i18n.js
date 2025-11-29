@@ -17,6 +17,10 @@ const translations = {
     "cantabria_desc": "Descubre pueblos, monumentos y gastronomía de Cantabria.",
     "contact_title": "Contacto",
     "email_title": "Email",
+    "privacy_section_title": "POLÍTICA DE PRIVACIDAD",
+    "privacy_title": "Política de Privacidad",
+    "privacy_desc": "Consulta cómo gestionamos tus datos en todas nuestras aplicaciones.",
+    "privacy_button": "Ver Política",
     "footer_text": "&copy; 2025 JDMobile. Todos los derechos reservados."
   },
   en: {
@@ -37,6 +41,10 @@ const translations = {
     "cantabria_desc": "Discover villages, monuments, and gastronomy of Cantabria.",
     "contact_title": "Contact",
     "email_title": "Email",
+    "privacy_section_title": "PRIVACY POLICY",
+    "privacy_title": "Privacy Policy",
+    "privacy_desc": "See how we manage your data across all our apps.",
+    "privacy_button": "View Policy",
     "footer_text": "&copy; 2025 JDMobile. All rights reserved."
   },
   fr: {
@@ -57,6 +65,10 @@ const translations = {
     "cantabria_desc": "Découvrez les villages, monuments et la gastronomie de la Cantabrie.",
     "contact_title": "Contact",
     "email_title": "Email",
+    "privacy_section_title": "POLITIQUE DE CONFIDENTIALITÉ",
+    "privacy_title": "Politique de Confidentialité",
+    "privacy_desc": "Consultez comment nous gérons vos données dans toutes nos applications.",
+    "privacy_button": "Voir la Politique",
     "footer_text": "&copy; 2025 JDMobile. Tous droits réservés."
   },
   de: {
@@ -77,6 +89,10 @@ const translations = {
     "cantabria_desc": "Entdecke Dörfer, Denkmäler und Gastronomie von Kantabrien.",
     "contact_title": "Kontakt",
     "email_title": "E-Mail",
+    "privacy_section_title": "DATENSCHUTZERKLÄRUNG",
+    "privacy_title": "Datenschutzerklärung",
+    "privacy_desc": "Erfahren Sie, wie wir Ihre Daten in allen unseren Apps verwalten.",
+    "privacy_button": "Richtlinie ansehen",
     "footer_text": "&copy; 2025 JDMobile. Alle Rechte vorbehalten."
   },
   it: {
@@ -97,6 +113,10 @@ const translations = {
     "cantabria_desc": "Scopri paesi, monumenti e gastronomia della Cantabria.",
     "contact_title": "Contatto",
     "email_title": "Email",
+    "privacy_section_title": "INFORMATIVA SULLA PRIVACY",
+    "privacy_title": "Informativa sulla Privacy",
+    "privacy_desc": "Scopri come gestiamo i tuoi dati in tutte le nostre applicazioni.",
+    "privacy_button": "Vedi Politica",
     "footer_text": "&copy; 2025 JDMobile. Tutti i diritti riservati."
   }
 };
@@ -163,6 +183,16 @@ function updateLanguage(lang) {
       } else {
         el.textContent = translations[lang][key];
       }
+    }
+  });
+
+  // Handle elements that should only be visible for a specific language
+  const langSpecificElements = document.querySelectorAll('[data-lang-only]');
+  langSpecificElements.forEach(el => {
+    if (el.getAttribute('data-lang-only') === lang) {
+      el.style.display = 'block';
+    } else {
+      el.style.display = 'none';
     }
   });
 }
