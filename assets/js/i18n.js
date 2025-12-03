@@ -118,11 +118,35 @@ const translations = {
     "privacy_desc": "Scopri come gestiamo i tuoi dati in tutte le nostre applicazioni.",
     "privacy_button": "Vedi Politica",
     "footer_text": "&copy; 2025 JDMobile. Tutti i diritti riservati."
+  },
+  pt: {
+    "page_title": "JDMobile - Desenvolvedor Indie",
+    "subtitle": "Desenvolvedor Indie",
+    "apps_title": "APPS",
+    "kawaii_title": "Kawaii Sushi Counter: Kawashi",
+    "kawaii_desc": "O contador de sushi mais kawaii: conte os sushis que você come e bata seu recorde.",
+    "star_title": "Contador Star & Hero Realms",
+    "star_desc": "Contador de pontos, vida e autoridade para Star Realms e Hero Realms.",
+    "chinchon_title": "Contador Chinchón de Pontos",
+    "chinchon_desc": "Anote pontos de Chinchón, Conga ou Golpe offline.",
+    "couple_goals_title": "Couple Goals & Love Counter",
+    "couple_goals_desc": "Veja há quantos dias vocês estão juntos e alcancem suas metas de casal.",
+    "cosmere_title": "Companheiro Cosmere",
+    "cosmere_desc": "Seu guia para a ordem de leitura e cronologia do Cosmere.",
+    "cantabria_title": "Descubra a Cantábria",
+    "cantabria_desc": "Descubra vilas, monumentos e gastronomia da Cantábria.",
+    "contact_title": "Contato",
+    "email_title": "Email",
+    "privacy_section_title": "POLÍTICA DE PRIVACIDADE",
+    "privacy_title": "Política de Privacidade",
+    "privacy_desc": "Veja como gerenciamos seus dados em todos os nossos aplicativos.",
+    "privacy_button": "Ver Política",
+    "footer_text": "&copy; 2025 JDMobile. Todos os direitos reservados."
   }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentLang = localStorage.getItem('language') || 'es';
+  const currentLang = localStorage.getItem('language') || 'en';
   updateLanguage(currentLang);
   setupLanguageSelector(currentLang);
 });
