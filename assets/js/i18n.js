@@ -21,6 +21,7 @@ const translations = {
     "privacy_title": "Política de Privacidad",
     "privacy_desc": "Consulta cómo gestionamos tus datos en todas nuestras aplicaciones.",
     "privacy_button": "Ver Política",
+    "terms_button": "Ver Términos",
     "footer_text": "&copy; 2025 JDMobile. Todos los derechos reservados."
   },
   en: {
@@ -45,6 +46,7 @@ const translations = {
     "privacy_title": "Privacy Policy",
     "privacy_desc": "See how we manage your data across all our apps.",
     "privacy_button": "View Policy",
+    "terms_button": "View Terms",
     "footer_text": "&copy; 2025 JDMobile. All rights reserved."
   },
   fr: {
@@ -69,6 +71,7 @@ const translations = {
     "privacy_title": "Politique de Confidentialité",
     "privacy_desc": "Consultez comment nous gérons vos données dans toutes nos applications.",
     "privacy_button": "Voir la Politique",
+    "terms_button": "Voir les Termes",
     "footer_text": "&copy; 2025 JDMobile. Tous droits réservés."
   },
   de: {
@@ -93,6 +96,7 @@ const translations = {
     "privacy_title": "Datenschutzerklärung",
     "privacy_desc": "Erfahren Sie, wie wir Ihre Daten in allen unseren Apps verwalten.",
     "privacy_button": "Richtlinie ansehen",
+    "terms_button": "Bedingungen ansehen",
     "footer_text": "&copy; 2025 JDMobile. Alle Rechte vorbehalten."
   },
   it: {
@@ -117,6 +121,7 @@ const translations = {
     "privacy_title": "Informativa sulla Privacy",
     "privacy_desc": "Scopri come gestiamo i tuoi dati in tutte le nostre applicazioni.",
     "privacy_button": "Vedi Politica",
+    "terms_button": "Vedi Termini",
     "footer_text": "&copy; 2025 JDMobile. Tutti i diritti riservati."
   },
   pt: {
@@ -141,6 +146,7 @@ const translations = {
     "privacy_title": "Política de Privacidade",
     "privacy_desc": "Veja como gerenciamos seus dados em todos os nossos aplicativos.",
     "privacy_button": "Ver Política",
+    "terms_button": "Ver Termos",
     "footer_text": "&copy; 2025 JDMobile. Todos os direitos reservados."
   }
 };
