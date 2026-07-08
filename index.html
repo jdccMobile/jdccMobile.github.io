@@ -5,206 +5,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="page_title">JDMobile - Indie Developer</title>
+  <meta name="description" content="Free iOS and Android apps by JDMobile: World Cup 2026 Predictor, Kawashi sushi counter, Chinchón score counter, Star & Hero Realms counter and more." />
+  <link rel="canonical" href="https://jdccmobile.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JDMobile - Indie Developer" />
+  <meta property="og:description" content="Free iOS and Android apps: World Cup 2026 Predictor, Kawashi sushi counter, Chinchón score counter, Star & Hero Realms counter and more." />
+  <meta property="og:url" content="https://jdccmobile.github.io/" />
+  <meta property="og:image" content="https://jdccmobile.github.io/assets/images/web_icon.png" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" href="assets/images/web_icon.png" type="image/png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+  <link rel="stylesheet" href="assets/css/site.css"/>
   <link rel="stylesheet" href="assets/css/i18n.css"/>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    :root {
-      --primary-color: #3E8E4D;
-      --bg-color: #f9f9f9;
-      --card-bg: #ffffff;
-      --text-color: #333;
-      --text-secondary: #666;
-    }
-
-    body {
-      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      margin: 0;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      width: 100%;
-      max-width: 600px;
-    }
-
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .subtitle {
-      margin: 0;
-      font-size: 16px;
-      color: var(--text-secondary);
-      font-weight: 400;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 600px; /* Constrain width for mobile-first layout */
-      padding: 100px 20px 40px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .section-title {
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--text-secondary);
-      margin-bottom: 10px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .app-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .app-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    }
-
-    .app-header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .app-icon {
-      width: 80px;
-      height: 80px;
-      border-radius: 20%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .app-title {
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0 0 8px;
-      color: var(--text-color);
-    }
-
-    .app-desc {
-      font-size: 14px;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .btn-container {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 12px;
-    }
-
-    /* Store Badge Styles */
-    .store-link {
-      display: inline-flex;
-      justify-content: center;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .store-link:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-
-    .store-link:active {
-      transform: translateY(0);
-    }
-
-    .store-badge {
-      height: 40px; /* Standard visible height */
-      width: auto;
-      object-fit: contain;
-    }
-
-    .contact-section {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .contact-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    }
-
-    .contact-btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 25px;
-      background-color: #eee;
-      color: #333;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s;
-    }
-
-    .contact-btn:hover {
-      background-color: #ddd;
-    }
-
-    footer {
-      margin-top: auto;
-      padding: 20px;
-      text-align: center;
-      font-size: 12px;
-      color: #999;
-    }
-
-    footer a {
-      color: #999;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
+    /* Page-specific tweaks: keep the language selector clear of the sticky tab bar */
+    #language-selector { top: 66px; }
+    .profile { padding-top: 72px; }
+    .contact-card { max-width: 600px; margin: 0 auto; }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JDMobile",
+    "url": "https://jdccmobile.github.io/",
+    "logo": "https://jdccmobile.github.io/assets/images/web_icon.png",
+    "email": "jdccmobile@gmail.com"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "JDMobile apps",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "World Cup 2026 Predictor", "url": "https://jdccmobile.github.io/world-cup-2026-predictor/" },
+      { "@type": "ListItem", "position": 2, "name": "Kawaii Sushi Counter: Kawashi", "url": "https://jdccmobile.github.io/kawaii-sushi-counter/" },
+      { "@type": "ListItem", "position": 3, "name": "Chinchón Score Counter", "url": "https://jdccmobile.github.io/chinchon-score-counter/" },
+      { "@type": "ListItem", "position": 4, "name": "Star & Hero Realms Counter", "url": "https://jdccmobile.github.io/realms-counter/" },
+      { "@type": "ListItem", "position": 5, "name": "Currency Converter: Ratio", "url": "https://play.google.com/store/apps/details?id=com.jdmobile.ratiocurrencyconverter" }
+    ]
+  }
+  </script>
 </head>
 
 <body>
+
+  <!-- App tab bar -->
+  <nav class="tabbar" aria-label="JDMobile apps">
+    <div class="tabbar-inner">
+      <a class="tab active" href="/" data-i18n="tab_home">Home</a>
+      <a class="tab" href="/world-cup-2026-predictor/" data-href-en="/world-cup-2026-predictor/" data-href-es="/world-cup-2026-predictor/es/"><img src="assets/images/world-cup-2026-predictor/icon-192.webp" alt="" width="22" height="22" /><span data-i18n="tab_worldcup">World Cup 26</span></a>
+      <a class="tab" href="/kawaii-sushi-counter/" data-href-en="/kawaii-sushi-counter/" data-href-es="/kawaii-sushi-counter/es/"><img src="assets/images/kawaii-sushi-counter/icon-192.webp" alt="" width="22" height="22" />Kawashi</a>
+      <a class="tab" href="/chinchon-score-counter/" data-href-en="/chinchon-score-counter/" data-href-es="/chinchon-score-counter/es/"><img src="assets/images/chinchon-score-counter/icon-192.webp" alt="" width="22" height="22" />Chinchón</a>
+      <a class="tab" href="/realms-counter/" data-href-en="/realms-counter/" data-href-es="/realms-counter/es/"><img src="assets/images/realms-counter/icon-192.webp" alt="" width="22" height="22" />Realms</a>
+    </div>
+  </nav>
 
   <!-- Language Selector -->
   <div id="language-selector">
@@ -234,24 +90,51 @@
   </div>
 
 
-  <div class="container">
+  <main class="page">
+
+    <header class="profile" style="max-width:none;">
+      <img src="assets/images/web_icon.png" alt="JDMobile logo" class="avatar" width="100" height="100" />
+      <h1>JDMobile</h1>
+      <p class="subtitle" data-i18n="subtitle">Indie Developer</p>
+    </header>
 
     <!-- Apps Section -->
-    <div class="section-title" data-i18n="apps_title">APPS</div>
+    <section class="landing-section">
+    <h2 data-i18n="apps_title">APPS</h2>
+    <div class="app-grid">
+
+    <!-- World Cup 2026 Predictor -->
+    <div class="app-card">
+      <div class="app-header">
+        <img src="assets/images/world-cup-2026-predictor/icon-192.webp" alt="World Cup 2026 Predictor icon" class="app-icon" width="80" height="80" />
+        <h2 class="app-title" data-i18n="world_cup_title">World Cup 2026 Predictor</h2>
+        <p class="app-desc" data-i18n="world_cup_desc">Simulador de la Copa del Mundo 2026: crea y comparte tu propio cuadro.</p>
+        <a class="app-more" href="/world-cup-2026-predictor/" data-href-en="/world-cup-2026-predictor/" data-href-es="/world-cup-2026-predictor/es/" data-i18n="learn_more">Learn more →</a>
+      </div>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/us/app/world-football-26-predictor/id6762615410" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.footballworldcuppredictions" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
+        </a>
+      </div>
+    </div>
 
     <!-- Kawaii Sushi Counter -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/kawaii_sushi_icon.png" alt="Icono Kawaii Sushi" class="app-icon" />
+        <img src="assets/images/kawaii-sushi-counter/icon-192.webp" alt="Kawaii Sushi Counter Kawashi icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="kawaii_title">Kawaii Sushi Counter: Kawashi</h2>
         <p class="app-desc" data-i18n="kawaii_desc">El contador de sushi más kawaii: cuenta los sushis que comes y supera tu récord.</p>
+        <a class="app-more" href="/kawaii-sushi-counter/" data-href-en="/kawaii-sushi-counter/" data-href-es="/kawaii-sushi-counter/es/" data-i18n="learn_more">Learn more →</a>
       </div>
       <div class="btn-container">
-        <a href="https://apps.apple.com/ca/app/kawaii-sushi-counter-kawashi/id6754204916" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
+        <a href="https://apps.apple.com/ca/app/kawaii-sushi-counter-kawashi/id6754204916" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.kawaiisushicounter" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.kawaiisushicounter" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
@@ -259,50 +142,17 @@
     <!-- Chinchón -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/chinchon_icon.png" alt="Icono Chinchón" class="app-icon" />
+        <img src="assets/images/chinchon-score-counter/icon-192.webp" alt="Chinchón score counter icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="chinchon_title">Contador Chinchón de Puntos</h2>
         <p class="app-desc" data-i18n="chinchon_desc">Anota puntos de Chinchón, Conga o Golpe sin conexión.</p>
+        <a class="app-more" href="/chinchon-score-counter/" data-href-en="/chinchon-score-counter/" data-href-es="/chinchon-score-counter/es/" data-i18n="learn_more">Learn more →</a>
       </div>
       <div class="btn-container">
-        <a href="https://apps.apple.com/es/app/chinchon-contador/id6754444361" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
+        <a href="https://apps.apple.com/es/app/chinchon-contador/id6754444361" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.chinchoncontador" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
-        </a>
-      </div>
-    </div>
-
-    <!-- World Cup 2026 Predictor -->
-    <div class="app-card">
-      <div class="app-header">
-        <img src="assets/images/world_cup_icon.png" alt="Icono World Cup" class="app-icon" />
-        <h2 class="app-title" data-i18n="world_cup_title">World Cup 2026 Predictor</h2>
-        <p class="app-desc" data-i18n="world_cup_desc">Simulador de la Copa del Mundo 2026: crea y comparte tu propio cuadro.</p>
-      </div>
-      <div class="btn-container">
-        <a href="https://apps.apple.com/us/app/world-cup-2026-predictor/id6762615410" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.footballworldcuppredictions" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
-        </a>
-      </div>
-    </div>
-
-    <!-- Continental Counter -->
-    <div class="app-card">
-      <div class="app-header">
-        <img src="assets/images/continental_icon.png" alt="Icono Continental" class="app-icon" />
-        <h2 class="app-title" data-i18n="continental_title">Contador de Continental</h2>
-        <p class="app-desc" data-i18n="continental_desc">Anota los puntos de tus partidas de Continental sin conexión.</p>
-      </div>
-      <div class="btn-container">
-        <a href="https://apps.apple.com/app/id6764658116" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.continentalcounter" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.chinchoncontador" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
@@ -310,17 +160,51 @@
     <!-- Star & Hero Realms -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/star_realms_icon.png" alt="Icono Star Realms" class="app-icon" />
+        <img src="assets/images/realms-counter/icon-192.webp" alt="Star & Hero Realms counter icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="star_title">Star & Hero Realms Contador</h2>
         <p class="app-desc" data-i18n="star_desc">Contador de puntos, vida y autoridad para Star Realms y Hero Realms.</p>
+        <a class="app-more" href="/realms-counter/" data-href-en="/realms-counter/" data-href-es="/realms-counter/es/" data-i18n="learn_more">Learn more →</a>
       </div>
       <div class="btn-container">
-        <a href="https://apps.apple.com/ar/app/realms-counter-life-points/id6756354460" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
+        <a href="https://apps.apple.com/ar/app/realms-counter-life-points/id6756354460" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
         </a>
-        <!-- Google Play Button -->
-        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Currency Converter: Ratio -->
+    <div class="app-card">
+      <div class="app-header">
+        <img src="assets/images/ratio_icon.png" alt="Currency Converter Ratio icon" class="app-icon" width="80" height="80" />
+        <h2 class="app-title" data-i18n="ratio_title">Currency Converter: Ratio</h2>
+        <p class="app-desc" data-i18n="ratio_desc">Convert 38 currencies with live exchange rates. No sign-up, works offline.</p>
+      </div>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/us/app/currency-converter-ratio/id6775283659" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.ratiocurrencyconverter" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Continental Counter -->
+    <div class="app-card">
+      <div class="app-header">
+        <img src="assets/images/continental_icon.png" alt="Continental counter icon" class="app-icon" width="80" height="80" />
+        <h2 class="app-title" data-i18n="continental_title">Contador de Continental</h2>
+        <p class="app-desc" data-i18n="continental_desc">Anota los puntos de tus partidas de Continental sin conexión.</p>
+      </div>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/app/id6764658116" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.continentalcounter" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
@@ -328,13 +212,13 @@
     <!-- Couple Goals & Love Counter -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/couple_goals_icon.png" alt="Icono Couple Goals" class="app-icon" />
+        <img src="assets/images/couple_goals_icon.png" alt="Couple Goals icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="couple_goals_title">Couple Goals & Love Counter</h2>
         <p class="app-desc" data-i18n="couple_goals_desc">Mira cuantos días llevas juntos y logra tus metas de pareja.</p>
       </div>
       <div class="btn-container">
-        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.couplegoals" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.couplegoals" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
@@ -342,16 +226,16 @@
     <!-- Cosmere Companion -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/cosmere_companion_icon.png" alt="Icono Cosmere" class="app-icon" />
+        <img src="assets/images/cosmere_companion_icon.png" alt="Cosmere Companion icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="cosmere_title">Cosmere Companion</h2>
         <p class="app-desc" data-i18n="cosmere_desc">Tu guía para el orden de lectura y línea temporal del Cosmere.</p>
       </div>
       <div class="btn-container">
-        <a href="https://apps.apple.com/es/app/cosmere-companion/id6754872045" class="store-link" target="_blank">
-            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" />
+        <a href="https://apps.apple.com/es/app/cosmere-companion/id6754872045" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" />
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.cosmerecompanion" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdmobile.cosmerecompanion" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
@@ -359,37 +243,44 @@
     <!-- Descubre Cantabria -->
     <div class="app-card">
       <div class="app-header">
-        <img src="assets/images/descubre_cantabria_icon.png" alt="Icono Cantabria" class="app-icon" />
+        <img src="assets/images/descubre_cantabria_icon.png" alt="Descubre Cantabria icon" class="app-icon" width="80" height="80" />
         <h2 class="app-title" data-i18n="cantabria_title">Descubre Cantabria</h2>
         <p class="app-desc" data-i18n="cantabria_desc">Descubre pueblos, monumentos y gastronomía de Cantabria.</p>
       </div>
       <div class="btn-container">
-        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.discovercantabria.androidApp" class="store-link" target="_blank">
-            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" />
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.discovercantabria.androidApp" class="store-link" target="_blank" rel="noopener">
+            <img src="assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" />
         </a>
       </div>
     </div>
 
+    </div>
+    </section>
+
     <!-- Contact Section -->
-    <div id="contact" class="section-title" data-i18n="contact_title">Contacto</div>
+    <section id="contact" class="landing-section">
+    <h2 data-i18n="contact_title">Contacto</h2>
     <div class="contact-card">
-      <h2 class="app-title" data-i18n="email_title">Email</h2>
+      <h3 class="app-title" data-i18n="email_title">Email</h3>
       <p class="app-desc"><a href="mailto:jdccmobile@gmail.com" style="color: inherit; text-decoration: none;">jdccmobile@gmail.com</a></p>
     </div>
+    </section>
 
     <!-- Privacy Policy Section -->
-    <div id="privacy" class="section-title" data-i18n="privacy_section_title">Política de Privacidad</div>
+    <section id="privacy" class="landing-section">
+    <h2 data-i18n="privacy_section_title">Política de Privacidad</h2>
     <div class="contact-card">
-      <h2 class="app-title" data-i18n="privacy_title">Política de Privacidad</h2>
+      <h3 class="app-title" data-i18n="privacy_title">Política de Privacidad</h3>
       <p class="app-desc" data-i18n="privacy_desc">Consulta cómo gestionamos tus datos en todas nuestras aplicaciones.</p>
       <a href="privacy.html" class="contact-btn" data-i18n="privacy_button">Ver Política</a>
       <a href="terms.html" class="contact-btn" data-i18n="terms_button">Ver Términos</a>
     </div>
+    </section>
 
-  </div>
+  </main>
 
   <footer>
-    <p data-i18n="footer_text">&copy; 2025 JDMobile. Todos los derechos reservados.</p>
+    <p data-i18n="footer_text">&copy; 2026 JDMobile. Todos los derechos reservados.</p>
   </footer>
 
   <script src="assets/js/i18n.js"></script>

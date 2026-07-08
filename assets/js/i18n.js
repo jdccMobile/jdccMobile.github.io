@@ -26,7 +26,12 @@ const translations = {
     "privacy_desc": "Consulta cómo gestionamos tus datos en todas nuestras aplicaciones.",
     "privacy_button": "Ver Política",
     "terms_button": "Ver Términos",
-    "footer_text": "&copy; 2025 JDMobile. Todos los derechos reservados."
+    "tab_home": "Inicio",
+    "tab_worldcup": "Mundial 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "Convierte 38 divisas con tipos de cambio en vivo, sin registro y sin conexión.",
+    "learn_more": "Ver más →",
+    "footer_text": "&copy; 2026 JDMobile. Todos los derechos reservados."
   },
   en: {
     "page_title": "JDMobile - Indie Developer",
@@ -55,7 +60,12 @@ const translations = {
     "privacy_desc": "See how we manage your data across all our apps.",
     "privacy_button": "View Policy",
     "terms_button": "View Terms",
-    "footer_text": "&copy; 2025 JDMobile. All rights reserved."
+    "tab_home": "Home",
+    "tab_worldcup": "World Cup 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "Convert 38 currencies with live exchange rates. No sign-up, works offline.",
+    "learn_more": "Learn more →",
+    "footer_text": "&copy; 2026 JDMobile. All rights reserved."
   },
   fr: {
     "page_title": "JDMobile - Développeur Indépendant",
@@ -84,7 +94,12 @@ const translations = {
     "privacy_desc": "Consultez comment nous gérons vos données dans toutes nos applications.",
     "privacy_button": "Voir la Politique",
     "terms_button": "Voir les Termes",
-    "footer_text": "&copy; 2025 JDMobile. Tous droits réservés."
+    "tab_home": "Accueil",
+    "tab_worldcup": "Mondial 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "Convertissez 38 devises avec des taux en direct, sans inscription et hors ligne.",
+    "learn_more": "En savoir plus →",
+    "footer_text": "&copy; 2026 JDMobile. Tous droits réservés."
   },
   de: {
     "page_title": "JDMobile - Indie-Entwickler",
@@ -113,7 +128,12 @@ const translations = {
     "privacy_desc": "Erfahren Sie, wie wir Ihre Daten in allen unseren Apps verwalten.",
     "privacy_button": "Richtlinie ansehen",
     "terms_button": "Bedingungen ansehen",
-    "footer_text": "&copy; 2025 JDMobile. Alle Rechte vorbehalten."
+    "tab_home": "Start",
+    "tab_worldcup": "WM 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "38 Währungen mit Live-Wechselkursen umrechnen – ohne Anmeldung, auch offline.",
+    "learn_more": "Mehr erfahren →",
+    "footer_text": "&copy; 2026 JDMobile. Alle Rechte vorbehalten."
   },
   it: {
     "page_title": "JDMobile - Sviluppatore Indie",
@@ -142,7 +162,12 @@ const translations = {
     "privacy_desc": "Scopri come gestiamo i tuoi dati in tutte le nostre applicazioni.",
     "privacy_button": "Vedi Politica",
     "terms_button": "Vedi Termini",
-    "footer_text": "&copy; 2025 JDMobile. Tutti i diritti riservati."
+    "tab_home": "Home",
+    "tab_worldcup": "Mondiali 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "Converti 38 valute con tassi di cambio in tempo reale, senza registrazione e offline.",
+    "learn_more": "Scopri di più →",
+    "footer_text": "&copy; 2026 JDMobile. Tutti i diritti riservati."
   },
   pt: {
     "page_title": "JDMobile - Desenvolvedor Indie",
@@ -171,7 +196,12 @@ const translations = {
     "privacy_desc": "Veja como gerenciamos seus dados em todos os nossos aplicativos.",
     "privacy_button": "Ver Política",
     "terms_button": "Ver Termos",
-    "footer_text": "&copy; 2025 JDMobile. Todos os direitos reservados."
+    "tab_home": "Início",
+    "tab_worldcup": "Mundial 26",
+    "ratio_title": "Currency Converter: Ratio",
+    "ratio_desc": "Converta 38 moedas com câmbio ao vivo, sem cadastro e offline.",
+    "learn_more": "Saiba mais →",
+    "footer_text": "&copy; 2026 JDMobile. Todos os direitos reservados."
   }
 };
 
@@ -238,6 +268,12 @@ function updateLanguage(lang) {
         el.textContent = translations[lang][key];
       }
     }
+  });
+
+  // Swap links between EN and ES versions of landing pages
+  document.querySelectorAll('[data-href-es]').forEach(el => {
+    const target = lang === 'es' ? el.getAttribute('data-href-es') : el.getAttribute('data-href-en');
+    if (target) el.setAttribute('href', target);
   });
 
   // Handle elements that should only be visible for a specific language

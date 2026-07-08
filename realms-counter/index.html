@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star &amp; Hero Realms Life Counter — Authority Tracker</title>
+  <meta name="description" content="Track authority, health and scores in Star Realms and Hero Realms with up to 4 players. Win-ratio stats, offline, free. Also great for MTG and Ascension." />
+  <link rel="canonical" href="https://jdccmobile.github.io/realms-counter/" />
+  <link rel="alternate" hreflang="en" href="https://jdccmobile.github.io/realms-counter/" />
+  <link rel="alternate" hreflang="es" href="https://jdccmobile.github.io/realms-counter/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://jdccmobile.github.io/realms-counter/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Star &amp; Hero Realms Life Counter — Authority Tracker" />
+  <meta property="og:description" content="Track authority, health and scores in Star Realms and Hero Realms with up to 4 players. Free, offline, with win-ratio stats." />
+  <meta property="og:url" content="https://jdccmobile.github.io/realms-counter/" />
+  <meta property="og:image" content="https://jdccmobile.github.io/assets/images/realms-counter/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/images/web_icon.png" type="image/png" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <style>:root { --accent: #F5B301; --on-accent: #241A05; --accent-text: #8A6400; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Star & Hero Realms Counter",
+    "operatingSystem": "ANDROID, IOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Score, life and authority counter for Star Realms and Hero Realms, up to 4 players, with win-ratio stats. Also works for MTG, Cthulhu Realms and Ascension.",
+    "image": "https://jdccmobile.github.io/assets/images/realms-counter/og.jpg",
+    "url": "https://jdccmobile.github.io/realms-counter/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "installUrl": "https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter",
+    "author": { "@type": "Person", "name": "JDMobile" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "JDMobile", "item": "https://jdccmobile.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Star & Hero Realms Counter", "item": "https://jdccmobile.github.io/realms-counter/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do you track authority in Star Realms?", "acceptedAnswer": { "@type": "Answer", "text": "Each player starts at 50 authority. Combat reduces your opponent's authority and some cards restore yours. Instead of flipping the paper authority cards, the app gives every player a big tap counter — much faster and error-free." } },
+      { "@type": "Question", "name": "What is the starting health in Hero Realms?", "acceptedAnswer": { "@type": "Answer", "text": "In standard Hero Realms both players start at 50 health. In campaign or boss modes characters can have different totals — the app lets you set any starting value." } },
+      { "@type": "Question", "name": "Can I use it with 3 or 4 players?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The app supports up to 4 players on one device, ideal for free-for-all or Hunter multiplayer formats." } },
+      { "@type": "Question", "name": "Does it work for Magic: The Gathering and other games?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is designed for Star Realms and Hero Realms, but works as a life counter for any game: MTG, Cthulhu Realms, Ascension and more." } },
+      { "@type": "Question", "name": "Does the app track wins?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It keeps statistics with each player's win ratio, so you finally know who the real champion of your group is." } },
+      { "@type": "Question", "name": "Is the Realms counter free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the app is free on the App Store and Google Play, with an optional PRO subscription for premium extras." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="tabbar" aria-label="JDMobile apps">
+    <div class="tabbar-inner">
+      <a class="tab" href="/">Home</a>
+      <a class="tab" href="/world-cup-2026-predictor/"><img src="/assets/images/world-cup-2026-predictor/icon-192.webp" alt="" width="22" height="22" />World Cup 26</a>
+      <a class="tab" href="/kawaii-sushi-counter/"><img src="/assets/images/kawaii-sushi-counter/icon-192.webp" alt="" width="22" height="22" />Kawashi</a>
+      <a class="tab" href="/chinchon-score-counter/"><img src="/assets/images/chinchon-score-counter/icon-192.webp" alt="" width="22" height="22" />Chinchón</a>
+      <a class="tab active" href="/realms-counter/"><img src="/assets/images/realms-counter/icon-192.webp" alt="" width="22" height="22" />Realms</a>
+    </div>
+  </nav>
+  <div class="lang-switch"><a href="/realms-counter/es/" hreflang="es" lang="es">Español</a></div>
+
+  <main class="page">
+
+    <section class="hero">
+      <img src="/assets/images/realms-counter/icon-192.webp" alt="Star and Hero Realms life counter app icon" class="app-icon" width="110" height="110" />
+      <h1>Star &amp; Hero Realms Life Counter</h1>
+      <p class="tagline">Track authority, health and scores without fiddling with cards. Up to 4 players, win-ratio stats, fully offline. From a fan, for the fans.</p>
+      <p class="rating">🚀 Works for Star Realms, Hero Realms, MTG and more</p>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/us/app/realms-counter-life-points/id6756354460" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/app_store_badge.svg" alt="Download Realms Counter on the App Store" class="store-badge" width="135" height="44" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/google_play_badge.svg" alt="Get Star & Hero Realms Counter on Google Play" class="store-badge" width="149" height="44" />
+        </a>
+      </div>
+    </section>
+
+    <section class="landing-section" aria-label="Screenshots">
+      <div class="shots">
+        <img src="/assets/images/realms-counter/screenshot-1.jpg" alt="Authority counter for two players in the Realms Counter app" width="480" height="853" />
+        <img src="/assets/images/realms-counter/screenshot-2.jpg" alt="Four player life counter layout for Star Realms multiplayer" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/realms-counter/screenshot-3.jpg" alt="Adjusting health and authority totals in the counter" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/realms-counter/screenshot-4.jpg" alt="Win ratio statistics screen in the Realms Counter app" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/realms-counter/screenshot-5.jpg" alt="Minimalist design of the Star and Hero Realms counter" width="480" height="853" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <h2>How it works</h2>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3>Pick your players</h3><p>1v1 duel or up to 4 players on the same device. Set the starting authority or health for your game.</p></div>
+        <div class="step"><span class="num">2</span><h3>Tap to track damage</h3><p>Big, fast counters for every player. No more flipping authority cards or mental math mid-combo.</p></div>
+        <div class="step"><span class="num">3</span><h3>Check who really wins</h3><p>The app records results and shows each player's win ratio, so bragging rights are backed by data.</p></div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <h2>Why Realms players use it</h2>
+      <ul class="features">
+        <li>💯 Complete counter with everything you need</li>
+        <li>👥 Up to 4 players on one device</li>
+        <li>📊 Win-ratio stats between friends</li>
+        <li>🎨 Minimalist design, made with care</li>
+        <li>📴 Offline, unlimited games</li>
+        <li>🃏 Also great for MTG, Cthulhu Realms and Ascension</li>
+      </ul>
+    </section>
+
+    <section class="landing-section" id="guides">
+      <h2>Realms guides</h2>
+      <div class="guide-cards">
+        <a class="guide-card" href="/realms-counter/guides/star-realms-authority-tracker.html"><h3>Tracking authority in Star Realms</h3><p>Why the paper cards slow you down and the fastest way to track authority.</p><span class="more">Read the guide →</span></a>
+        <a class="guide-card" href="/realms-counter/guides/hero-realms-health-tracker.html"><h3>Hero Realms health tracking</h3><p>Starting health, character classes and how to keep totals straight in every mode.</p><span class="more">Read the guide →</span></a>
+        <a class="guide-card" href="/realms-counter/guides/star-realms-multiplayer-scoring.html"><h3>Star Realms with 3–4 players</h3><p>Multiplayer formats like free-for-all and Hunter, and how to keep score in each.</p><span class="more">Read the guide →</span></a>
+        <a class="guide-card" href="/realms-counter/guides/life-counter-card-games.html"><h3>A life counter for any card game</h3><p>MTG, Ascension, Cthulhu Realms: one app to track life totals in all of them.</p><span class="more">Read the guide →</span></a>
+      </div>
+    </section>
+
+    <section class="landing-section faq" id="faq">
+      <h2>Frequently asked questions</h2>
+      <details>
+        <summary>How do you track authority in Star Realms?</summary>
+        <p>Each player starts at 50 authority; combat lowers it and some cards restore it. The app replaces the paper authority cards with a fast tap counter. <a class="learn-more" href="/realms-counter/guides/star-realms-authority-tracker.html">Learn more</a></p>
+      </details>
+      <details>
+        <summary>What is the starting health in Hero Realms?</summary>
+        <p>Both players start at 50 in standard games; campaign characters can differ. The app lets you set any starting value. <a class="learn-more" href="/realms-counter/guides/hero-realms-health-tracker.html">Learn more</a></p>
+      </details>
+      <details>
+        <summary>Can I use it with 3 or 4 players?</summary>
+        <p>Yes, up to 4 players on one device — ideal for free-for-all or Hunter formats. <a class="learn-more" href="/realms-counter/guides/star-realms-multiplayer-scoring.html">Learn more</a></p>
+      </details>
+      <details>
+        <summary>Does it work for Magic: The Gathering and other games?</summary>
+        <p>Yes. It works as a life counter for any game: MTG, Cthulhu Realms, Ascension and more. <a class="learn-more" href="/realms-counter/guides/life-counter-card-games.html">Learn more</a></p>
+      </details>
+      <details>
+        <summary>Does the app track wins?</summary>
+        <p>Yes. It keeps each player's win ratio, so you finally know who the real champion of your group is.</p>
+      </details>
+      <details>
+        <summary>Is the Realms counter free?</summary>
+        <p>Yes, free on the App Store and Google Play, with an optional PRO subscription for premium extras.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <h2>Spend your brain on combos, not math</h2>
+      <p>Download the Star &amp; Hero Realms Counter and make every game smoother.</p>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/us/app/realms-counter-life-points/id6756354460" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/app_store_badge.svg" alt="Download on the App Store" class="store-badge" width="135" height="44" loading="lazy" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.scorelifecounter" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/google_play_badge.svg" alt="Get it on Google Play" class="store-badge" width="149" height="44" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 JDMobile ·
+      <a href="/">Home</a> ·
+      <a href="/privacy.html">Privacy Policy</a> ·
+      <a href="/terms.html">Terms of Use</a> ·
+      <a href="mailto:jdccmobile@gmail.com">Contact</a>
+    </p>
+    <p>Unofficial app. Star Realms and Hero Realms are trademarks of Wise Wizard Games. This app is not affiliated with or endorsed by Wise Wizard Games.</p>
+  </footer>
+</body>
+</html>

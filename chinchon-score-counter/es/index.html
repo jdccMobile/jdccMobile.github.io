@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador de Chinchón: anota puntos sin papel | App gratis</title>
+  <meta name="description" content="Anota los puntos de tus partidas de Chinchón, Conga o Golpe sin papel ni lápiz. Reenganches, pozo, estadísticas y modo offline. Gratis para iOS y Android." />
+  <link rel="canonical" href="https://jdccmobile.github.io/chinchon-score-counter/es/" />
+  <link rel="alternate" hreflang="en" href="https://jdccmobile.github.io/chinchon-score-counter/" />
+  <link rel="alternate" hreflang="es" href="https://jdccmobile.github.io/chinchon-score-counter/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://jdccmobile.github.io/chinchon-score-counter/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contador de Chinchón: anota puntos sin papel" />
+  <meta property="og:description" content="Anota los puntos del Chinchón, Conga o Golpe sin papel ni lápiz. Reenganches, pozo y estadísticas, todo offline. Gratis." />
+  <meta property="og:url" content="https://jdccmobile.github.io/chinchon-score-counter/es/" />
+  <meta property="og:image" content="https://jdccmobile.github.io/assets/images/chinchon-score-counter/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/assets/images/web_icon.png" type="image/png" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <style>:root { --accent: #3E8E4D; }</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Chinchon Contador Puntos",
+    "operatingSystem": "ANDROID, IOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Contador de puntos para Chinchón, Conga y Golpe: anota rondas, gestiona reenganches y pozo, y consulta estadísticas de cada jugador. Funciona sin conexión.",
+    "image": "https://jdccmobile.github.io/assets/images/chinchon-score-counter/og.jpg",
+    "url": "https://jdccmobile.github.io/chinchon-score-counter/es/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "installUrl": "https://play.google.com/store/apps/details?id=com.jdccmobile.chinchoncontador",
+    "author": { "@type": "Person", "name": "JDMobile" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "JDMobile", "item": "https://jdccmobile.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Contador de Chinchón", "item": "https://jdccmobile.github.io/chinchon-score-counter/es/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "¿Cómo se anotan los puntos en el Chinchón?", "acceptedAnswer": { "@type": "Answer", "text": "Al final de cada ronda, cada jugador suma el valor de las cartas que no ha conseguido ligar. Cerrar ligando todas las cartas resta 10 puntos, y hacer chinchón (siete cartas seguidas del mismo palo) gana la partida directamente. La app hace todas las cuentas por ti." } },
+      { "@type": "Question", "name": "¿Cómo se juega al Chinchón?", "acceptedAnswer": { "@type": "Answer", "text": "Se reparten 7 cartas a cada jugador, que intenta formar escaleras del mismo palo o grupos de cartas iguales robando y descartando en cada turno. Cuando alguien cierra, las cartas sin ligar suman puntos de penalización. Gana quien se mantiene por debajo del límite acordado (normalmente 70 o 100)." } },
+      { "@type": "Question", "name": "¿Qué diferencia hay entre Chinchón, Conga y Golpe?", "acceptedAnswer": { "@type": "Answer", "text": "Son variantes regionales del mismo juego tipo rummy con pequeñas diferencias al cerrar y al puntuar. La app soporta las tres, así que puedes anotar como se juegue en tu mesa." } },
+      { "@type": "Question", "name": "¿Se puede reenganchar un jugador eliminado?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La app permite reenganches: el jugador eliminado vuelve a entrar con la puntuación más alta de los que siguen vivos, como en una mesa de verdad." } },
+      { "@type": "Question", "name": "¿El contador de Chinchón funciona sin internet?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, completamente. Puedes anotar rondas, guardar partidas y continuarlas más tarde sin ninguna conexión." } },
+      { "@type": "Question", "name": "¿El contador de Chinchón es gratis?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La app es gratuita tanto en App Store como en Google Play." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="tabbar" aria-label="Apps de JDMobile">
+    <div class="tabbar-inner">
+      <a class="tab" href="/">Inicio</a>
+      <a class="tab" href="/world-cup-2026-predictor/es/"><img src="/assets/images/world-cup-2026-predictor/icon-192.webp" alt="" width="22" height="22" />Mundial 26</a>
+      <a class="tab" href="/kawaii-sushi-counter/es/"><img src="/assets/images/kawaii-sushi-counter/icon-192.webp" alt="" width="22" height="22" />Kawashi</a>
+      <a class="tab active" href="/chinchon-score-counter/es/"><img src="/assets/images/chinchon-score-counter/icon-192.webp" alt="" width="22" height="22" />Chinchón</a>
+      <a class="tab" href="/realms-counter/es/"><img src="/assets/images/realms-counter/icon-192.webp" alt="" width="22" height="22" />Realms</a>
+    </div>
+  </nav>
+  <div class="lang-switch"><a href="/chinchon-score-counter/" hreflang="en" lang="en">English</a></div>
+
+  <main class="page">
+
+    <section class="hero">
+      <img src="/assets/images/chinchon-score-counter/icon-192.webp" alt="Icono del contador de Chinchón" class="app-icon" width="110" height="110" />
+      <h1>Contador de Chinchón: olvídate del papel y el boli</h1>
+      <p class="tagline">Anota los puntos del Chinchón, la Conga o el Golpe con rondas, reenganches, pozo y estadísticas. 100% sin conexión.</p>
+      <p class="rating">🃏 Más de 10.000 descargas en Google Play</p>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/es/app/chinchon-contador/id6754444361" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/app_store_badge.svg" alt="Descargar Chinchón Contador en App Store" class="store-badge" width="135" height="44" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.chinchoncontador&hl=es" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/google_play_badge.svg" alt="Descargar Chinchón Contador en Google Play" class="store-badge" width="149" height="44" />
+        </a>
+      </div>
+    </section>
+
+    <section class="landing-section" aria-label="Capturas de pantalla">
+      <div class="shots">
+        <img src="/assets/images/chinchon-score-counter/screenshot-1.jpg" alt="Tabla de puntos del Chinchón con las rondas de cada jugador" width="480" height="853" />
+        <img src="/assets/images/chinchon-score-counter/screenshot-2.jpg" alt="Añadiendo los puntos de una ronda en el contador de Chinchón" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/chinchon-score-counter/screenshot-3.jpg" alt="Ajustes de partida: límite de puntos y reenganches" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/chinchon-score-counter/screenshot-4.jpg" alt="Control del pozo y las apuestas en el contador de Chinchón" width="480" height="853" loading="lazy" />
+        <img src="/assets/images/chinchon-score-counter/screenshot-5.jpg" alt="Estadísticas de jugadores en la app del Chinchón" width="480" height="853" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <h2>Cómo funciona</h2>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><h3>Crea tu partida</h3><p>Añade a los jugadores, fija el límite de puntos (70, 100 o el que queráis) y decide si hay reenganches.</p></div>
+        <div class="step"><span class="num">2</span><h3>Anota cada ronda</h3><p>Apunta los puntos de cada jugador tras cada mano — incluidos el −10 por cerrar o el −25 del chinchón con comodín. La app lleva los totales.</p></div>
+        <div class="step"><span class="num">3</span><h3>La app hace el resto</h3><p>Eliminaciones, reenganches, pozo y ganador se calculan solos. Guarda la partida y continúala cuando quieras.</p></div>
+      </div>
+    </section>
+
+    <section class="landing-section">
+      <h2>Por qué lo usan los jugadores</h2>
+      <ul class="features">
+        <li>📝 Anota rondas en segundos, sin errores de cuentas</li>
+        <li>📴 Totalmente offline: perfecto para el bar o la playa</li>
+        <li>💾 Guarda partidas y continúalas más tarde</li>
+        <li>🔄 Reenganches para jugadores eliminados</li>
+        <li>💰 Control del pozo y las apuestas por jugador</li>
+        <li>📊 Estadísticas detalladas de cada jugador</li>
+      </ul>
+    </section>
+
+    <section class="landing-section" id="guias">
+      <h2>Guías del Chinchón</h2>
+      <div class="guide-cards">
+        <a class="guide-card" href="/chinchon-score-counter/es/guias/como-jugar-chinchon.html"><h3>Cómo se juega al Chinchón</h3><p>Las reglas completas: reparto, jugadas, cierre y cómo se gana.</p><span class="more">Leer la guía →</span></a>
+        <a class="guide-card" href="/chinchon-score-counter/es/guias/puntos-chinchon-menos-10.html"><h3>Los puntos del Chinchón: el −10 y el −25</h3><p>Cómo se cuentan los puntos, la bonificación por cerrar y cuánto vale el chinchón.</p><span class="more">Leer la guía →</span></a>
+        <a class="guide-card" href="/chinchon-score-counter/es/guias/chinchon-conga-golpe-diferencias.html"><h3>Chinchón, Conga y Golpe: diferencias</h3><p>Qué cambia entre las tres variantes y cómo se puntúa cada una.</p><span class="more">Leer la guía →</span></a>
+        <a class="guide-card" href="/chinchon-score-counter/es/guias/como-anotar-puntos-chinchon.html"><h3>Cómo anotar los puntos del Chinchón</h3><p>Plantilla de papel vs app: la mejor forma de llevar una noche entera de partidas.</p><span class="more">Leer la guía →</span></a>
+      </div>
+    </section>
+
+    <section class="landing-section faq" id="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cómo se anotan los puntos en el Chinchón?</summary>
+        <p>Cada ronda, cada jugador suma el valor de sus cartas sin ligar. Cerrar ligando todo resta 10 puntos y el chinchón gana la partida. La app hace las cuentas. <a class="learn-more" href="/chinchon-score-counter/es/guias/puntos-chinchon-menos-10.html">Saber más</a></p>
+      </details>
+      <details>
+        <summary>¿Cómo se juega al Chinchón?</summary>
+        <p>7 cartas por jugador, escaleras del mismo palo o grupos de iguales, robar y descartar cada turno. Gana quien no supera el límite. <a class="learn-more" href="/chinchon-score-counter/es/guias/como-jugar-chinchon.html">Saber más</a></p>
+      </details>
+      <details>
+        <summary>¿Qué diferencia hay entre Chinchón, Conga y Golpe?</summary>
+        <p>Son variantes regionales del mismo juego con pequeñas diferencias al cerrar y puntuar. La app soporta las tres. <a class="learn-more" href="/chinchon-score-counter/es/guias/chinchon-conga-golpe-diferencias.html">Saber más</a></p>
+      </details>
+      <details>
+        <summary>¿Se puede reenganchar un jugador eliminado?</summary>
+        <p>Sí. El eliminado vuelve con la puntuación más alta de los que siguen vivos, como en una mesa de verdad.</p>
+      </details>
+      <details>
+        <summary>¿El contador funciona sin internet?</summary>
+        <p>Sí, completamente. Anota rondas, guarda partidas y continúalas sin conexión.</p>
+      </details>
+      <details>
+        <summary>¿El contador de Chinchón es gratis?</summary>
+        <p>Sí. La app es gratuita en App Store y Google Play.</p>
+      </details>
+    </section>
+
+    <section class="cta">
+      <h2>Tu próxima partida, sin garabatos</h2>
+      <p>Descarga el contador de Chinchón y dedícate solo a jugar.</p>
+      <div class="btn-container">
+        <a href="https://apps.apple.com/es/app/chinchon-contador/id6754444361" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/app_store_badge.svg" alt="Descargar en App Store" class="store-badge" width="135" height="44" loading="lazy" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.jdccmobile.chinchoncontador&hl=es" class="store-link" target="_blank" rel="noopener">
+          <img src="/assets/images/google_play_badge.svg" alt="Disponible en Google Play" class="store-badge" width="149" height="44" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 JDMobile ·
+      <a href="/">Inicio</a> ·
+      <a href="/privacy.html">Política de Privacidad</a> ·
+      <a href="/terms.html">Términos de Uso</a> ·
+      <a href="mailto:jdccmobile@gmail.com">Contacto</a>
+    </p>
+  </footer>
+</body>
+</html>
